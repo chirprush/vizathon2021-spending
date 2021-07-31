@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import plotly.express as px
 import pandas
 
@@ -28,4 +29,4 @@ plot.update_traces(
     ])
 )
 plot.update_layout(title="State Funding Compared to Coronavirus Cases")
-plot.show()
+plot.write_html("index.html")
